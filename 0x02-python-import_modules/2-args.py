@@ -4,13 +4,13 @@ if __name__ == "__main__":
     index = len(argv) - 1
 
     if index == 0:
-        print("{} arguments. ".format(index))
+        print("{} arguments.".format(index))
 
     elif index == 1:
-        print("{} argument: ".format(index))
+        print("{} argument:".format(index))
 
     else:
-        print("{} arguments: ".format(index))
+        print("{} arguments:".format(index))
 
     if index >= 1:
         index = 0
