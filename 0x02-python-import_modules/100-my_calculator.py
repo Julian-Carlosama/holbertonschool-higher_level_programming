@@ -25,3 +25,5 @@ if __name__ == "__main__":
         elif sys.argv[2] == "/":
             print("{} / {} = {}".format(num1, num2, div(num1, num2)))
             exit(0)
+        else:
+            print("Unknown operator. Available operators: +, -, * and /")
