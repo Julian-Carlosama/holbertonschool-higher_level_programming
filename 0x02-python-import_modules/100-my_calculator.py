@@ -20,8 +20,6 @@ if __name__ == "__main__":
             print("{} - {} = {}".format(num1, num2, resta))
             exit(0)
         elif op == "*":
-            result = eval(f'{num1} {op[2]} {num2}')
-            print(result)
             print("{} * {} = {}".format(num1, num2, multi))
             exit(0)
         elif op == "/":
