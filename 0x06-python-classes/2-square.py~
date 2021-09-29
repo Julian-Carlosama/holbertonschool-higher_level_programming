@@ -1,0 +1,12 @@
+#!/usr/bin/python3
+""" Class that defines a square """
+
+
+class Square:
+    """ Class Square """
+    def __init__(self, size):
+        if size != :
+            try TypeError:
+                print("size must be an integer")
+        else:
+            print("size must be >= 0")
