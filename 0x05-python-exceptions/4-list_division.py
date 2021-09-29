@@ -17,6 +17,6 @@ def list_division(my_list_1, my_list_2, list_length):
             total = 0
         finally:
             my_list3.append(total)
-        i += 0
+        i += 1
         pass
     return(my_list3)
