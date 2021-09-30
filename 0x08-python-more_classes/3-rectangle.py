@@ -58,4 +58,4 @@ class Rectangle:
         for i in range(self.height):
             salto += ("#" * self.width) + "\n"
 
-        return(salto)
+        return(salto[:-1])
