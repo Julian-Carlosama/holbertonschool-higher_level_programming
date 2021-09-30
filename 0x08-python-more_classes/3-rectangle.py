@@ -57,5 +57,6 @@ class Rectangle:
 
         for i in range(self.height):
             salto += ("#" * self.width) + "\n"
+            rectangle = salto[:-1]
 
-        return(salto[:-1])
+        return(rectangle)
