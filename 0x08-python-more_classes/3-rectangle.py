@@ -52,7 +52,7 @@ class Rectangle:
     def __str__(self):
         """ Method that allow """
         salto = ""
-        if self.width and self.height == 0:
+        if self.width == 0 or self.height == 0:
             return(salto)
 
         for i in range(self.height):
