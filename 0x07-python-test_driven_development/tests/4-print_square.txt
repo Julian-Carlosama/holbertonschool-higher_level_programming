@@ -6,18 +6,6 @@ Using ``4-print_square``
 
 >>> print_square = __import__('4-print_square').print_square
 
->>> print_square(3)
-###
-###
-###
-
->>> print_square(5)
-#####
-#####
-#####
-#####
-#####
-
 >>> print_square(0)
 
 >>> print_square("Hello")
