@@ -7,6 +7,11 @@ an instance of a class that inherited from, the specified class
 
 
 def is_kind_of_class(obj, a_class):
+    """
+    conditionals that determinate the object
+    Return:
+    True or False
+    """
     if isinstance(obj, a_class):
         return (True)
     else:
