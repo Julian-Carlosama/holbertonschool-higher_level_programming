@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-class BaseGeometry (based on 5-base_geometry.py).
+Class BaseGeometry (based on 5-base_geometry.py).
 """
 
 
@@ -11,5 +11,5 @@ class BaseGeometry:
     pass
 
     def area(self):
-        """Method that raises an Exception """
+    """Method that raises an Exception """
        raise Exception("area() is not implemented")
