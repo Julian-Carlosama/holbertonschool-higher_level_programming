@@ -3,6 +3,7 @@
 class BaseGeometry (based on 5-base_geometry.py).
 """
 
+
 class BaseGeometry:
     """
     Public instance method that raises an Exception.
