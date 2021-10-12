@@ -3,6 +3,7 @@
 class BaseGeometry (based on 5-base_geometry.py).
 """
 
+
 class BaseGeometry:
     """
     Public instance method that raises an Exception.
@@ -10,9 +11,15 @@ class BaseGeometry:
     pass
 
     def area(self):
-       raise Exception("area() is not implemented")
+        """
+        Public instance method that raises an Exception.
+        """
+        raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
+        """
+        Public instance method that validates value.
+        """
         if not isinstance(value, int):
             raise TypeError(f"{name} must be an integer")
 
