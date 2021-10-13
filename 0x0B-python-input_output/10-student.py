@@ -23,7 +23,7 @@ class Student():
         retrieves a dictionary representation of a Student instance
         '''
         new_dic = {}
-        if is isinstance(attrs, list):
+        if type(attrs) is list:
             for i in attrs:
                 if type(i) is str and hasattr(self, i):
                     new_dic[i] = getattr(self, i)
