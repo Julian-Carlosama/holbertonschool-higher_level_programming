@@ -1,17 +1,18 @@
 #!/usr/bin/python3
 """
-Class principal called base
+Create a new class with a
+private class attribute
+__nb_objects
 """
 
 
-class Base:
+class Base():
+    """The Bass class"""
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """ inicialized a constructor """
-
-        if id is not None:
+        if id:
             self.id = id
         else:
             Base.__nb_objects += 1
-            self.id = self.__nb_objects
+            self.id = Base.__nb_objects
