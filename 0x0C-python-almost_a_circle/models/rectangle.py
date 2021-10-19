@@ -14,9 +14,9 @@ class Rectangle(Base):
     inicialized method constructor
     """
 
-
     def __init__(self, width, height, x=0, y=0, id=None):
         """ Inicialized constructor """
+
         self.width = width
         self.height = height
         self.x = x
