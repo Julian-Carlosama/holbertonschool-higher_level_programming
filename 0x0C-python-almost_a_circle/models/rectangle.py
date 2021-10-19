@@ -1,21 +1,24 @@
-#!/bin/usr/python3
+#!/usr/bin/python3
 """
-Import Base classs
-class Rectangle that inherits from Base:
+Rectangle class that inherits from Base
+Private instance attributes, each with its
+own public getter and setter
 """
 
 
 from models.base import Base
-""" Class rentangle """
+"""
+Import the base class
+"""
 
 
 class Rectangle(Base):
-    """
-    inicialized method constructor
-    """
+    """Rectangle method"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """ Inicialized constructor """
+        """
+        Inicialized constructor
+        """
 
         self.width = width
         self.height = height
@@ -56,7 +59,7 @@ class Rectangle(Base):
     @property
     def x(self):
         """to retrieve it"""
-        return (self.__x)
+        return self.__x
 
     @x.setter
     def x(self, value):
@@ -71,7 +74,7 @@ class Rectangle(Base):
     @property
     def y(self):
         """to retrieve it"""
-        return (self.__y)
+        return self.__y
 
     @y.setter
     def y(self, value):
@@ -84,13 +87,12 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
-        """return  area"""
-        return (self.__width * self.__height)
+        """Return the area"""
+        return self.__width * self.__height
 
     def display(self):
-        """print the rectangle"""
+        """Print the rectangle"""
         print("\n" * self.y, end="")
-
         for i in range(self.height):
             for j in range(self.x):
                 print(" ", end="")
@@ -99,6 +101,6 @@ class Rectangle(Base):
             print("")
 
     def __str__(self):
-        """return a string"""
+        """Return a string"""
         return(f"[Rectangle] \
 ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}")
