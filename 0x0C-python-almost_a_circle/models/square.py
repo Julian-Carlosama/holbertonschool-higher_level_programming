@@ -6,8 +6,9 @@ Class square
 
 from models.rectangle import Rectangle
 """
-Import class rectangle 
+Import class rectangle
 """
+
 
 class Square(Rectangle):
     """ Init constructor or magic method """
