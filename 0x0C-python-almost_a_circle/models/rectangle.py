@@ -104,3 +104,13 @@ class Rectangle(Base):
         """Return a string"""
         return(f"[Rectangle] \
 ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}")
+
+    def update(self, *args):
+        """
+        method that assigns an
+        argument to each attribute:
+        """
+        if args is not None and len(args) != 0:
+            my_list = ["id", "width", "height", "x", "y"]
+            for j in range(len(args)):
+                setattr(self, my_list[j], args[j])
