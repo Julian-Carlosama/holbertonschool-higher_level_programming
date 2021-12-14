@@ -1,4 +1,5 @@
 #!/usr/bin/node
 function add(a, b) {
-  const intg = parseInt(a) + parseInt(b);
+  console.log(parseInt(a) + parseInt(b));
 }
+add();
