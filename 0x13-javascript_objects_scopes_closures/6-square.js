@@ -4,7 +4,7 @@ class Square extends square5 {
   charPrint (c) {
     if (c === undefined) {
       //    c = 'X';
-      super.print();
+      this.print();
     } else {
       for (let i = 0; i < this.height; i++) {
         let squ = '';
