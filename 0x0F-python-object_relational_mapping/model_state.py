@@ -7,10 +7,10 @@ Base = declarative_base()
 """ Model for the """
 
 
-class Model(Base):
+class State(Base):
     """ Method that define the table name """
     __tablename__ = 'states'
 
     """ Atributes for the table """
-    id = Column(Integer, primary_key=True, autoincrement=True, nullable=True)
-    name = Column(String(128))
+    id = Column(Integer, primary_key=True, autoincrement=True, nullable=False)
+    name = Column(String(128), nullable=True, unique=False)
