@@ -24,8 +24,7 @@ if __name__ == "__main__":
     sess = Session()
 
     """ Show Query object """
-    statess = sess.query(State).order_by(State.id).first()
-    for i in statess:
-        if ('a' in i.name):
-            print(f"{i.id}: {i.name}")
+    statess = sess.query(State).filter(State.name.like('%a%')).all()
+    for state in statess:
+        print(f"{state.id}: {state.name}")
     sess.close()
